@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="public/favicon/favicon.ico" sizes="any">
+    <link rel="manifest" href="public/favicon/site.webmanifest">
+    <link rel="stylesheet" href="public/css/main.css">
+  <script src="https://www.google.com/recaptcha/enterprise.js?render=6Ld8s3IqAAAAAPTxReD4YEDz8Y1_NIazEpNJC-XZ"></script>
+  <!-- Your code -->
+  <!-- Your code -->
+    <title>Tiktok Downloader</title>
+</head>
+<body class="bg-white w-screen h-screen">
+    <div class="container mx-auto h-full flex flex-col space-y-9">
+        <nav class="h-24 flex justify-between px-2">
+            <a href="https://code.mataberita.com/" class="h-full p-1.5 flex items-center">
+                <div class="w-10 h-10" href="https://code.mataberita.com">
+                    <img class="w-full h-full" src="public/assets/logo.png"></img>
+                </div>
+                <div class="hidden sm:block ml-2 font-bold text-2xl dark:text-neutral-200">Tiktok Downloader</div>
+            </a>
+</nav>
+        <div class="h-full relative px-2 md:block flex flex-col justify-start items-center">
+            <div class="sm:hidden block ml-2 font-bold text-4xl dark:text-neutral-200">
+                    Tiktok Downloader</div>
+            
+            <div class="w-full md:w-9/12 lg:w-8/12 flex flex-col items-center md:block mt-6 ">
+                <div class="text-3xl lg:text-5xl xl:text-6xl font-bold text-center md:text-left dark:text-neutral-300">
+                    Download Tiktok Videos Tanpa Watermarks Gratis.
+                </div>
+                <div class=" mt-12 text-lg lg:text-xl xl:text-2xl text-center md:text-left dark:text-neutral-400">
+                    Masukkan Tautan Video Tiktok Untuk Mengunduh.
+                </div>
+<form action="../index.php" method="POST" class="form-container">
+    <input type="text" name="url" placeholder="Masukkan tautan" required class="input-url">
+    
+    <!-- Tombol Tempel (Paste) dari Clipboard -->
+    <button type="button" onclick="pasteFromClipboard()" class="btn-paste">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 2H14.82C14.4 1.42 13.74 1 13 1H9C8.26 1 7.6 1.42 7.18 2H5C3.9 2 3 2.9 3 4V20C3 21.1 3.9 22 5 22H19C20.1 22 21 21.1 21 20V4C21 2.9 20.1 2 19 2ZM9 2H13V4H9V2ZM19 20H5V4H7V6H17V4H19V20ZM8 12H10V18H8V12ZM14 12H16V18H14V12Z"/>
+        </svg>
+    </button>
+
+
+    <button type="submit" class="btn-submit" id="submitButton">
+        <img src="public/assets/inbox.png" alt="Logo" class="logo"/>
+    </button>
+
+
+
+</form>
+<!-- reCAPTCHA di luar form -->
+<div class="g-recaptcha" data-sitekey="6Ld8s3IqAAAAAPTxReD4YEDz8Y1_NIazEpNJC-XZ" data-callback="enableSubmitButton"></div>
+<script>
+    function enableSubmitButton() {
+        // Mengaktifkan tombol submit setelah reCAPTCHA selesai diverifikasi
+        document.getElementById("submitButton").disabled = false;
+    }
+</script>
+                <div class="w-full mt-3 md:mt-9 flex justify-between max-w-md flex-wrap md:flex-nowrap">
+                    <div class="w-1/2"><img src="public/assets/fastt.png" alt=""></div>
+                    <div class="w-1/2"><img src="public/assets/mp3.png" alt=""></div>
+                    <div class="w-1/2"><img src="public/assets/watermark.png" alt=""></div>
+                    <div class="w-1/2"><img src="public/assets/unlimited.png" alt=""></div>
+                  <div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
